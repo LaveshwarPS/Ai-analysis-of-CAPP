@@ -1,0 +1,135 @@
+{
+  "metadata": {
+    "generator": "CAPP Turning Planner",
+    "date": "2025-12-25T22:01:37.604405",
+    "part_file": "C:/Users/Adm/Downloads/head part v1.step"
+  },
+  "machinability": {
+    "score": 100,
+    "suitable_for_turning": true
+  },
+  "dimensions": {
+    "diameter": 20,
+    "length": 50,
+    "volume": 0,
+    "x_size": 20,
+    "y_size": 20,
+    "z_size": 50
+  },
+  "operations": [
+    {
+      "operation_id": 1,
+      "name": "Face & Center",
+      "description": "Face the part and create center marks for alignment",
+      "type": "facing",
+      "tool": "Facing insert (CNMG)",
+      "spindle_speed": 1212,
+      "feed_rate": 0.15,
+      "depth_of_cut": 1.0,
+      "coolant": "flood",
+      "estimated_time": 2.0
+    },
+    {
+      "operation_id": 3,
+      "name": "Finish Turning",
+      "description": "Achieve final diameter and surface finish",
+      "type": "turning",
+      "tool": "Finishing insert (VNMG, R0.4)",
+      "spindle_speed": 1455,
+      "feed_rate": 0.1,
+      "depth_of_cut": 0.5,
+      "coolant": "flood",
+      "estimated_time": 10.0
+    },
+    {
+      "operation_id": 5,
+      "name": "Threading",
+      "description": "Cut external threads",
+      "type": "threading",
+      "tool": "Threading insert (60\u00b0 diamond)",
+      "spindle_speed": 242,
+      "feed_rate": 0.5,
+      "depth_of_cut": 0.5,
+      "coolant": "light",
+      "estimated_time": 2.5,
+      "thread_spec": "M10 x 1.5 (example)"
+    },
+    {
+      "operation_id": 6,
+      "name": "Grooving",
+      "description": "Cut grooves for stress relief",
+      "type": "grooving",
+      "tool": "Grooving insert",
+      "spindle_speed": 1039,
+      "feed_rate": 0.15,
+      "depth_of_cut": 0.8,
+      "coolant": "flood",
+      "estimated_time": 1.5
+    },
+    {
+      "operation_id": 7,
+      "name": "Parting Off",
+      "description": "Separate finished part from stock",
+      "type": "parting",
+      "tool": "Parting blade",
+      "spindle_speed": 646,
+      "feed_rate": 0.08,
+      "depth_of_cut": 10.0,
+      "coolant": "light",
+      "estimated_time": 1.0
+    }
+  ],
+  "tools": [
+    {
+      "tool_id": 1,
+      "name": "Facing Insert",
+      "type": "CNMG 432 M0804",
+      "material": "Carbide",
+      "coating": "TiAlN",
+      "description": "For facing and end turning"
+    },
+    {
+      "tool_id": 2,
+      "name": "Turning Insert",
+      "type": "VNMG 431",
+      "material": "Carbide",
+      "coating": "TiAlN",
+      "description": "For rough and finish turning"
+    },
+    {
+      "tool_id": 3,
+      "name": "Boring Insert",
+      "type": "VNMG 331",
+      "material": "Carbide",
+      "coating": "TiAlN",
+      "description": "For boring internal diameters"
+    },
+    {
+      "tool_id": 4,
+      "name": "Threading Insert",
+      "type": "TT09T304",
+      "material": "Carbide",
+      "coating": "TiN",
+      "description": "For external threading"
+    },
+    {
+      "tool_id": 5,
+      "name": "Grooving Insert",
+      "type": "MGMN 300-M",
+      "material": "Carbide",
+      "coating": "TiAlN",
+      "description": "For grooving operations"
+    },
+    {
+      "tool_id": 6,
+      "name": "Parting Blade",
+      "type": "MGHR-3-M",
+      "material": "Carbide",
+      "coating": "TiN",
+      "description": "For parting off finished parts"
+    }
+  ],
+  "ai_recommendations": {
+    "optimizations": "Error: Ollama CLI timed out after 90 seconds"
+  }
+}

@@ -1,0 +1,18 @@
+venv312/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.tmp
+
+# Local secrets / env
+.env
+.env.*
+
+# Streamlit / app local state
+.streamlit/secrets.toml
+
+# Generated outputs
+*_turning_plan.json
